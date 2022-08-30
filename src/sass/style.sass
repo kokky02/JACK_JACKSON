@@ -1,0 +1,67 @@
+@import "colors"
+
+*
+    box-sizing: border-box
+
+body
+    background-color: $bgc
+
+.container
+    max-width: 1170px
+    width: 96%
+    margin: auto
+    @media (max-width: 640px)
+        width: 90%
+   
+.navbar
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 60px
+    display: flex
+    justify-content: right
+    align-items: center
+    transition: 0.4s ease-out
+    padding: 20px 0
+    z-index: 100000
+    background: $nav
+
+    a
+        text-decoration: none
+        color: $text
+            
+
+    .nav-links
+        display: flex
+        list-style: none
+        font-size: 15px
+        padding-right: 200px
+
+        .nav-link
+            a
+            margin-right: 4rem
+
+
+.main
+    &-block
+        display: flex
+        padding: 180px 0 15px 0
+
+    &-text
+        flex-basis: 50%
+        color: $text
+
+        
+
+    &-image
+        margin-left: 100px
+        
+        .woman
+            width: 213px
+            height: 327px
+           
+           
+            
+        
+  
