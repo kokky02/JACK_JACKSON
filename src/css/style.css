@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,6 +7,7 @@
 
 body {
   background-color: #363636;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -39,6 +42,7 @@ body {
   padding: 20px 0;
   z-index: 100000;
   background: #32484E;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .navbar a {
@@ -72,8 +76,33 @@ body {
   color: #fff;
 }
 
+.main-text__title {
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 55px;
+  margin: 45px 0 20px 0;
+  font-size: 40px;
+}
+
+.main-text__notice {
+  line-height: 20px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.main-text__button {
+  padding: 4px 60px;
+  color: #fff;
+  background-color: #5F96A4;
+  border: none;
+}
+
+.main-text__button:hover {
+  background-color: #558895;
+  cursor: pointer;
+}
+
 .main-image {
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 .main-image .woman {

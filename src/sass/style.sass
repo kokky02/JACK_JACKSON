@@ -1,10 +1,14 @@
 @import "colors"
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap')
+
 
 *
     box-sizing: border-box
 
 body
     background-color: $bgc
+    font-family: 'Roboto', sans-serif
 
 .container
     max-width: 1170px
@@ -26,6 +30,7 @@ body
     padding: 20px 0
     z-index: 100000
     background: $nav
+    font-family: 'IBM Plex Mono', monospace
 
     a
         text-decoration: none
@@ -47,15 +52,33 @@ body
     &-block
         display: flex
         padding: 180px 0 15px 0
-
+        
     &-text
         flex-basis: 50%
         color: $text
-
         
+        &__title
+            font-family: 'IBM Plex Mono', monospace
+            line-height: 55px
+            margin: 45px 0 20px 0
+            font-size: 40px
+
+        &__notice
+            line-height: 20px
+            display: block
+            margin-bottom: 30px
+
+        &__button
+            padding: 4px 60px
+            color: $text
+            background-color: $button
+            border: none
+            &:hover
+                background-color: darken($button, 5%)
+                cursor: pointer
 
     &-image
-        margin-left: 100px
+        margin-left: 200px
         
         .woman
             width: 213px
