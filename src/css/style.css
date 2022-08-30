@@ -258,6 +258,13 @@ body {
   color: #fff;
 }
 
+@media (max-width: 1290px) {
+  .benefits .benefit__text {
+    text-align: center;
+    padding: 10px 5px 30px 5px;
+  }
+}
+
 .benefits .benefit .subtitle {
   font-size: 18px;
   font-family: 'IBM Plex Sans', sans-serif;
