@@ -1,7 +1,6 @@
 @import "colors"
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap')
 
 *
     box-sizing: border-box
@@ -16,6 +15,8 @@ body
     margin: auto
     @media (max-width: 640px)
         width: 90%
+
+
    
 .navbar
     position: absolute
@@ -30,7 +31,7 @@ body
     padding: 20px 0
     z-index: 100000
     background: $nav
-    font-family: 'IBM Plex Mono', monospace
+    font-family: 'IBM Plex Sans', sans-serif
 
     a
         text-decoration: none
@@ -49,6 +50,7 @@ body
 
 
 .main
+    margin-bottom: 200px
     &-block
         display: flex
         padding: 180px 0 15px 0
@@ -58,7 +60,7 @@ body
         color: $text
         
         &__title
-            font-family: 'IBM Plex Mono', monospace
+            font-family: 'IBM Plex Sans', sans-serif
             line-height: 55px
             margin: 45px 0 20px 0
             font-size: 40px
@@ -78,13 +80,48 @@ body
                 cursor: pointer
 
     &-image
-        margin-left: 200px
-        
-        .woman
-            width: 213px
-            height: 327px
+        margin-left: 350px
+       
+          
+.title
+    font-family: 'IBM Plex Sans', sans-serif
+    line-height: 55px
+    margin-bottom: 10px
+    font-size: 25px
+    color: $text           
            
-           
-            
+.benefits
+    display: flex
+    justify-content: space-between
+    margin-bottom: 200px
+    @media (max-width: 1290px)
+        display: block
+        justify-content: space-between
+        align-items: center
+
+    .benefit
+        background-color: $button
         
-  
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        max-width: 370px
+        position: relative
+        text-align: left
+        @media (max-width: 1290px)
+            display: block
+            align-items: center
+            margin: auto
+
+        &__image
+            bottom: 0
+            left: 0
+            width: 370px
+            height: 250px
+
+        &__text
+            padding: 10px 10px 30px 25px
+            color: $text
+
+
+
