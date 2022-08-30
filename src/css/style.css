@@ -45,6 +45,18 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+@media (max-width: 1290px) {
+  .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .navbar a {
   text-decoration: none;
   color: #fff;
@@ -59,12 +71,24 @@ body {
   padding-right: 200px;
 }
 
+@media (max-width: 1290px) {
+  .navbar .nav-links {
+    padding-right: 0;
+  }
+}
+
 .navbar .nav-links .nav-link {
   margin-right: 4rem;
 }
 
 .main {
   margin-bottom: 200px;
+}
+
+@media (max-width: 1290px) {
+  .main {
+    margin-bottom: 100px;
+  }
 }
 
 .main-block {
@@ -74,10 +98,26 @@ body {
   padding: 180px 0 15px 0;
 }
 
+@media (max-width: 1290px) {
+  .main-block {
+    display: block;
+  }
+}
+
 .main-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   color: #fff;
+}
+
+@media (max-width: 1290px) {
+  .main-text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    display: block;
+  }
 }
 
 .main-text__title {
@@ -93,6 +133,12 @@ body {
   margin-bottom: 30px;
 }
 
+@media (max-width: 1290px) {
+  .main-text__notice {
+    padding: 0 150px;
+  }
+}
+
 .main-text__button {
   padding: 4px 60px;
   color: #fff;
@@ -105,16 +151,49 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 1290px) {
+  .main-text__button {
+    margin-bottom: 60px;
+  }
+}
+
 .main-image {
   margin-left: 350px;
 }
 
+@media (max-width: 1290px) {
+  .main-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .title {
   font-family: 'IBM Plex Sans', sans-serif;
-  line-height: 55px;
   margin-bottom: 10px;
   font-size: 25px;
   color: #fff;
+}
+
+@media (max-width: 1290px) {
+  .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .benefits {
@@ -163,6 +242,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin: auto;
+    margin-bottom: 15px;
   }
 }
 
@@ -181,5 +261,18 @@ body {
 .benefits .benefit .subtitle {
   font-size: 18px;
   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.footer {
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  font-size: 11px;
 }
 /*# sourceMappingURL=style.css.map */

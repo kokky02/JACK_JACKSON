@@ -32,6 +32,11 @@ body
     z-index: 100000
     background: $nav
     font-family: 'IBM Plex Sans', sans-serif
+    @media (max-width: 1290px)
+        justify-content: center
+        text-align: center
+        display: flex
+
 
     a
         text-decoration: none
@@ -43,6 +48,8 @@ body
         list-style: none
         font-size: 15px
         padding-right: 200px
+        @media (max-width: 1290px)
+            padding-right: 0
 
         .nav-link
             a
@@ -51,14 +58,22 @@ body
 
 .main
     margin-bottom: 200px
+    @media (max-width: 1290px)
+        margin-bottom: 100px
     &-block
         display: flex
         padding: 180px 0 15px 0
+        @media (max-width: 1290px)
+            display: block
         
     &-text
         flex-basis: 50%
         color: $text
-        
+        @media (max-width: 1290px)
+            justify-content: center
+            text-align: center
+            display: block       
+            
         &__title
             font-family: 'IBM Plex Sans', sans-serif
             line-height: 55px
@@ -69,6 +84,8 @@ body
             line-height: 20px
             display: block
             margin-bottom: 30px
+            @media (max-width: 1290px)
+                padding: 0 150px
 
         &__button
             padding: 4px 60px
@@ -78,17 +95,31 @@ body
             &:hover
                 background-color: darken($button, 5%)
                 cursor: pointer
+            @media (max-width: 1290px)
+                margin-bottom: 60px
 
     &-image
         margin-left: 350px
+        @media (max-width: 1290px)
+            display: flex
+            align-items: center
+            margin: auto
+            flex-direction: column
+           
+            
+
        
           
 .title
     font-family: 'IBM Plex Sans', sans-serif
-    line-height: 55px
     margin-bottom: 10px
     font-size: 25px
-    color: $text           
+    color: $text    
+    @media (max-width: 1290px)
+        justify-content: center
+        text-align: center
+        display: flex
+        
            
 .benefits
     display: flex
@@ -98,6 +129,7 @@ body
         display: block
         justify-content: space-between
         align-items: center
+        
 
     .benefit
         background-color: $button
@@ -112,6 +144,7 @@ body
             display: block
             align-items: center
             margin: auto
+            margin-bottom: 15px
 
         &__image
             bottom: 0
@@ -126,6 +159,17 @@ body
         .subtitle
             font-size: 18px
             font-family: 'IBM Plex Sans', sans-serif
+
+
+
+.footer
+    color: $text
+    justify-content: center
+    text-align: center
+    display: flex
+    padding-bottom: 20px
+    font-size: 11px
+    
            
 
 
